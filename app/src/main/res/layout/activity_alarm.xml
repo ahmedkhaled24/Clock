@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AlarmActivity"
+    android:background="@color/colorrrr">
+
+<TimePicker
+    android:id="@+id/tp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Schedule"
+    android:onClick="scheduleClick"/>
+
+
+<LinearLayout
+    android:layout_marginTop="60dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tp"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:id="@+id/li">
+
+    <Button
+        android:id="@+id/set_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_text"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_set_stop"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:fontFamily="@font/robotoslab_bold"/>
+
+    <Button
+        android:id="@+id/stop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_text"
+        android:background="@drawable/btn_set_stop"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:fontFamily="@font/robotoslab_bold"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/showTime_id"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/robotoslab_medium"/>
+
+
+</RelativeLayout>

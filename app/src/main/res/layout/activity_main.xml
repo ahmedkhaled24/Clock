@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#21618C">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="My Clock"
+            android:textSize="60dp"
+            android:fontFamily="@font/lobster_regular"
+            android:textColor="@color/colorrrr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ــــــــــــــــ"
+            android:layout_marginTop="-40dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="60dp"
+            android:textColor="@color/colorrrr"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp">
+
+        <Button
+            android:id="@+id/btn_go_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_design"
+            android:fontFamily="@font/robotoslab_bold"
+            android:onClick="btnGoAlarm"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:text="@string/alarm_text"
+            android:textColor="@color/colorrrr"
+            android:textSize="22sp"
+            android:layout_marginBottom="20sp"/>
+
+        <Button
+            android:id="@+id/btn_go_StopWatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_design"
+            android:fontFamily="@font/robotoslab_bold"
+            android:onClick="btnGoStopWatch"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:text="@string/stop_watch_text"
+            android:textColor="@color/colorrrr"
+            android:textSize="22sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
